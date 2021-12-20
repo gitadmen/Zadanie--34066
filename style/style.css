@@ -1,0 +1,66 @@
+
+* {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    background-color: red;
+    text-align: center;
+    padding: 1.5%;
+    margin: auto;
+}
+
+footer {
+    background-color: blueviolet;
+    padding: 1.5%;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row;
+}
+
+#aleft {
+    background-color: cadetblue;
+    width: 35%; 
+    
+}
+
+#aright {
+    background-color: forestgreen;
+    width: 35%; 
+   
+}
+
+#inside {
+    background-color: blue;
+    padding: 3%;
+    padding-bottom: 15%;
+
+}
+
+
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .container {
+        flex-wrap: wrap;
+        
+    }
+    #inside{
+        width: 70%;
+        
+    }
+    #aleft {
+        order: 1;
+        width: 100%;
+    }
+
+    #aright {
+    }
+    
+    
+ }
+
