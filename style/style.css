@@ -3,6 +3,7 @@
     font-size: 24px;
     text-align: center;
     color: white;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -19,48 +20,59 @@ footer {
 
 .container {
     display: flex; 
-    flex-direction: row;
 }
 
 #aleft {
     background-color: cadetblue;
-    width: 35%; 
-    
+    width: 30%; 
 }
 
 #aright {
     background-color: forestgreen;
-    width: 35%; 
-   
+    width: 30%; 
 }
 
 #inside {
     background-color: blue;
     padding: 3%;
     padding-bottom: 15%;
-
 }
-
 
 
 @media (min-width:768px) and (max-width:992px) {
 
     .container {
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
     #inside{
-        width: 70%;
-        
+        width: 70%;   
     }
     #aleft {
         order: 1;
         width: 100%;
     }
+ }
 
-    #aright {
+ @media (max-width:768px) {
+
+    .container {
+        flex-wrap: wrap;
     }
-    
-    
+    #inside,
+    #aleft,
+    #aright {
+        width: 100%;
+        
+    }
+    #aleft, #aright{
+        order: 1;
+        padding-bottom: 25%;
+        
+      
+        
+    }
+
+
+
  }
 
